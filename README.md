@@ -13,6 +13,8 @@ I've made the following changes:
 
 Since the nginx container exposes and listens on privelged ports (80 and 443), it must be run as root.
 
+Running as root makes mounting volumes simpler, since everyone's UID and GID is 1.
+
 My installation steps are as follows (all performed as root):
 
 - clone this project to /opt/nginx-certbot 
